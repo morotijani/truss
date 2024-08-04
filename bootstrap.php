@@ -1,13 +1,12 @@
 <?php 
 
-	require 'vendor/autoload.php';
-	require "src/System/Functions.php";
-	require_once "src/ErrorHandler.php";
-
-	set_error_handler('ErrorHandler::handleError');
-	set_exception_handler('ErrorHandler::handleException');
+	require dirname(__DIR__)  . '/truss/vendor/autoload.php';
 	
-	use Src\InvalidSignatureException;
+	//require "src/System/Functions.php";
+
+	// set_error_handler('ErrorHandler::handleError');
+	// set_exception_handler('ErrorHandler::handleException');
+	
 	use Src\System\DatabaseConnector;
 	
 	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
