@@ -106,8 +106,8 @@
     
     <!-- Custom styles for this template -->
     <link href="jumbotrons.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
+<body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -161,7 +161,7 @@
 
 	<div class="container-fluid">
   		<div class="text-center bg-body-tertiary p-1 rounded-3">
-    		<img src="../assets/logo/truss-1.png" class="bi" width="100" height="100">
+    		<img src="../dist/logo/truss-1.png" class="bi" width="100" height="100" align="Truss Logo">
     		<h1 class="text-body-emphasis">Truss</h1>
 		    <p class="col-lg-8 mx-auto fs-5 text-muted">
 		      	Built with a <code>REST API in PHP</code>, this API is very simple, yet incredibly reliable and safe, with an authentication method that greatly improves data protection and user authentication.
