@@ -5,20 +5,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="description" content="Documentation for Truss">
+    <meta name="author" content="Moro Tijani">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>MY API · Bootstrap v0.0.1</title>
+    <title>MY API · Truss v0.0.1</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Favicons -->
-	<link rel="apple-touch-icon" href="dist/logo/truss-1.png" sizes="180x180">
-	<link rel="icon" href="dist/logo/truss-1.png" sizes="32x32" type="image/png">
-	<link rel="icon" href="dist/logo/truss-1.png" sizes="16x16" type="image/png">
-	<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-	<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="../dist/logo/truss-1.png" sizes="180x180">
+	<link rel="icon" href="../dist/logo/truss-1.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="../dist/logo/truss-1.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="../dist/logo/truss-1.png">
 	<meta name="theme-color" content="#712cf9">
 
     <style>
