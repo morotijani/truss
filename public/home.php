@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
 <head>
- 	<script src="../assets/js/color-modes.js"></script>
+ 	<script src="../dist/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +13,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Favicons -->
-	<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="apple-touch-icon" href="dist/logo/truss-1.png" sizes="180x180">
+	<link rel="icon" href="dist/logo/truss-1.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="dist/logo/truss-1.png" sizes="16x16" type="image/png">
 	<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
 	<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
 	<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
@@ -398,7 +398,7 @@
   		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     		<div class="col-md-4 d-flex align-items-center">
 	      		<a href="home" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-	        		<img src="../assets/logo/truss-2.png" class="bi" width="30" height="24"><use xlink:href="#bootstrap"/>
+	        		<img src="../dist/logo/truss-2.png" alt="Truss Logo" class="bi" width="30" height="24"><use xlink:href="#bootstrap"/>
 	      		</a>
 	      		<span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Truss (API Development), Inc</span>
 	    	</div>
