@@ -34,7 +34,7 @@
 			 	} else {
 			 		$response['status_code_header'] = "HTTP/1.1 404 Not Found";
 					$response['body'] = json_encode([
-						'status' => 'error',
+						'status' => 'false',
 						'message' => 'Invalid URL!',
 					]);
 					echo $response['body'];
