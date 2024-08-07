@@ -36,7 +36,7 @@
         ) {
             // throw new InvalidArgumentException("Invalid token format!");
             echo json_encode([
-            	"status" => "error",
+            	"status" => "false",
             	"messgae" => "Invalid token format!"
             ]);
             exit;
@@ -55,7 +55,7 @@
             // throw new Exception("signature doesn't match");
             // throw new InvalidSignatureException;
             echo json_encode([
-            	"status" => "error",
+            	"status" => "false",
             	"message" => "Signature doesn't match!"
             ]);
             exit();
@@ -65,7 +65,7 @@
         if ($payload["exp"] < time()) {
         	// throw new TokenExpiredException;;
         	// echo json_encode([
-            // 	"status" => "error",
+            // 	"status" => "false",
             // 	"message" => "Token expired!"
             // ]);
         }
