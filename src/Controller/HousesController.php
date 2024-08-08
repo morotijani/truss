@@ -94,7 +94,7 @@
 			
 			$response['status_code_header'] = 'HTTP/1.1 201 Created';
 			$response['body'] = json_encode([
-				'status' => 'success',
+				'status' => 'true',
 				'message' => 'Data created!'
 			]);
 			
@@ -117,7 +117,7 @@
 
 			$response['status_code_header'] = 'HTTP/1.1 200 OK';
 			$response['body'] = json_encode([
-				'status' => 'success',
+				'status' => 'true',
 				'message' => 'Data updated!'
 			]);
 
@@ -134,7 +134,7 @@
 			
 			$response['status_code_header'] = 'HTTP/1.1 200 OK';
 			$response['body'] = json_encode([
-				'status' => 'success',
+				'status' => 'true',
 				'message' => 'Data deleted!'
 			]);
 			return $response;
