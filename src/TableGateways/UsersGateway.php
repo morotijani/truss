@@ -105,7 +105,7 @@
 				}
 
 			} catch (\PDOException $e) {
-				exit($e->getMessage);
+				exit($e->getMessage());
 			}
 		}
 
@@ -119,7 +119,7 @@
 					}
 					return false;
 				} catch (\PDOException $e) {
-					exit($e->getMessage);
+					exit($e->getMessage());
 				}
 			}
 		}
