@@ -20,7 +20,7 @@
 
 	    http_response_code(400);
 	    echo json_encode([
-			"status" => "error",
+			"status" => "false",
 	    	"message" => "Missing token!"
 	    ]);
 	    exit;
@@ -35,7 +35,7 @@
 	    
 	    http_response_code(400);
 	    echo json_encode([
-			"status" => "error",
+			"status" => "false",
 	    	"message" => "Invalid token!"
 	    ]);
 	    exit;
@@ -50,7 +50,7 @@
 	    
 	    http_response_code(400);
 	    echo json_encode([
-			"status" => "error",
+			"status" => "false",
 	    	"message" => "Invalid token (not on whitelist)!"
 	    ]);
 	    exit;
@@ -63,7 +63,7 @@
 	    
 	    http_response_code(401);
 	    echo json_encode([
-			"status" => "error",
+			"status" => "false",
 	    	"message" => "Invalid authentication!"
 	    ]);
 	    exit;
