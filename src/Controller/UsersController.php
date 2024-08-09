@@ -114,7 +114,7 @@
 
 			$response['status_code_header'] = 'HTTP/1.1 200 OK';
 			$response['body'] = json_encode([
-				'status' => 'true',
+				'status' => true,
 				'message' => 'Account updated!'
 			]);
 
@@ -131,7 +131,7 @@
 			
 			$response['status_code_header'] = 'HTTP/1.1 200 OK';
 			$response['body'] = json_encode([
-				'status' => 'true',
+				'status' => true,
 				'message' => 'Account deleted!'
 			]);
 			return $response;
@@ -153,7 +153,7 @@
 				$data = run($this->db, $query, $query_params);
 				if (is_array($data)) {
 					$response['body'] = json_encode([
-						'status' => 'false',
+						'status' => false,
 						'message' => 'Email, already exist!'
 					]);
 				}
@@ -161,14 +161,14 @@
 				// check email validity
 				if (!filter_var($params['user_email'], FILTER_VALIDATE_EMAIL)) {
 					$response['body'] = json_encode([
-						'status' => 'false',
+						'status' => false,
 						'message' => 'Invalid, email!'
 					]);
 				}
 
 				if (empty($params['user_email']) || $params['user_email'] == '') {
 					$response['body'] = json_encode([
-						'status' => 'false',
+						'status' => false,
 						'message' => 'Email is required!'
 					]);
 				}
@@ -193,7 +193,7 @@
 		private function unprocessableEntityResponse() {
 			$response['status_code_header'] = 'HTTP/1.1 422 Unprocessable Entity';
 			$response['body'] = json_encode([
-				'status' => 'false',
+				'status' => false,
 				'message' => 'Invalid input!',
 			]);
 			return $response;
@@ -202,7 +202,7 @@
 		private function notFoundResponse() {
 			$response['status_code_header'] = "HTTP/1.1 404 Not Found";
 			$response['body'] = json_encode([
-				'status' => 'false',
+				'status' => true,
 				'message' => 'No data found!',
 			]);
 
