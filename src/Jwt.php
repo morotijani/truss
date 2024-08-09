@@ -58,7 +58,7 @@
             	"status" => "false",
             	"message" => "Signature doesn't match!"
             ]);
-            exit();
+            exit;
         }
 
         $payload = json_decode($this->base64URLDecode($matches["payload"]), true);
