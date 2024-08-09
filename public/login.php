@@ -8,7 +8,7 @@
 		http_response_code(405);
 		header("Allow: POST");
 		echo json_encode([
-			"status" => "error",
+			"status" => "false",
 			"message" => "Method is not allowed!"
 		]);
 		exit();
@@ -19,7 +19,7 @@
 	if ($contentType != 'application/json') {
 		http_response_code(415);
 		echo json_encode([
-			"status" => "error",
+			"status" => "false",
 			"message" => "Only JSON content is supported!"
 		]);
 		exit();
@@ -30,7 +30,7 @@
 	if ($data === null) {
 		http_response_code(400);
 		echo json_encode([
-			"status" => "error",
+			"status" => "false",
 			"message" => "Invalid JSON data!"
 		]);
 		exit();
@@ -39,7 +39,7 @@
 	if (!array_key_exists('username', $data) || !array_key_exists('password', $data)) {
 		http_response_code(400);
 		echo json_encode([
-			"status" => "error",
+			"status" => "false",
 			"message" => "Missing login cresidentials!"
 		]);
 		exit();
@@ -52,7 +52,7 @@
 	if ($user === false) {
 		http_response_code(401);
 		echo json_encode([
-			"status" => "error",
+			"status" => "false",
 			"message" => "Invalid authentication!",
 		]);
 		exit();
@@ -61,7 +61,7 @@
 	if (!password_verify($data['password'], $user[0]->password_hash)) {
 		http_response_code(401);
 		echo json_encode([
-			"status" => "error",
+			"status" => "false",
 			"message" => "Invalid cresidentials!"
 		]);
 		exit();
