@@ -154,7 +154,7 @@
 			$data = run($this->db, $query, $query_params);
 			if (is_array($data)) {
 				$response['body'] = json_encode([
-					'status' => 'error',
+					'status' => 'false',
 					'message' => $params['house_name'] . ' house, already exist!'
 				]);
 			}
@@ -162,7 +162,7 @@
 			$user = $this->userGateway->find($params['user_id']);
 			if (! $user) {
 				$response['body'] = json_encode([
-					'status' => 'error',
+					'status' => 'false',
 					'message' => 'User not found!'
 				]);
 			}
@@ -182,7 +182,7 @@
 		private function unprocessableEntityResponse() {
 			$response['status_code_header'] = 'HTTP/1.1 422 Unprocessable Entity';
 			$response['body'] = json_encode([
-				'status' => 'error',
+				'status' => 'false',
 				'message' => 'Invalid input!',
 			]);
 			return $response;
@@ -191,7 +191,7 @@
 		private function notFoundResponse() {
 			$response['status_code_header'] = "HTTP/1.1 404 Not Found";
 			$response['body'] = json_encode([
-				'status' => 'error',
+				'status' => 'false',
 				'message' => 'No data found!',
 			]);
 
