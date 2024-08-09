@@ -91,7 +91,7 @@
 			
 			$response['status_code_header'] = 'HTTP/1.1 201 Created';
 			$response['body'] = json_encode([
-				'status' => 'true',
+				'status' => true,
 				'message' => 'Account created!'
 			]);
 			
@@ -202,7 +202,7 @@
 		private function notFoundResponse() {
 			$response['status_code_header'] = "HTTP/1.1 404 Not Found";
 			$response['body'] = json_encode([
-				'status' => true,
+				'status' => false,
 				'message' => 'No data found!',
 			]);
 
