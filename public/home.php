@@ -107,7 +107,7 @@
     <link href="jumbotrons.css" rel="stylesheet">
 </head>
 <body>
-
+	<!-- MODE PICKER -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       	<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
 	        id="bd-theme"
@@ -154,6 +154,7 @@
 		</div>
 	</div>
 
+	<!-- NAV -->
 	<div class="container border-bottom">
     	<header class="d-flex justify-content-center py-3">
 	      	<ul class="nav nav-pills">
@@ -172,6 +173,7 @@
     	</header>
   	</div>
 
+  	<!-- MAIN -->
   	<div class="container py-5">
 
   		<a href="javascript:;" name="api"></a>
@@ -378,6 +380,7 @@
   		</p>
 	</div>
 
+	<!-- FOOTER -->
 	<div class="container">
   		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     		<div class="col-md-4 d-flex align-items-center">
