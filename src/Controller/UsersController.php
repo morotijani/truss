@@ -1,5 +1,5 @@
 <?php
-	//namespace Src\Controller;
+	namespace Src\Controller;
 
 	use Src\TableGateways\UsersGateway;
 

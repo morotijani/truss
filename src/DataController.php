@@ -1,14 +1,8 @@
 <?php
 	namespace Src;
-
-    spl_autoload_register(function ($class_name) {
-    	$file = str_replace('\\', DIRECTORY_SEPARATOR, trim($class_name)).'.php';
-    	dnd($file);
-    	// include 'Controller/' . $class_name . '.php';
-	});
-
-	// use Src\Controller\UsersController;
-	// use Src\Controller\HousesController;
+	
+	use Src\Controller\UsersController;
+	use Src\Controller\HousesController;
 
 	class DataController {
 		private $db;
