@@ -6,6 +6,7 @@
 		private $dbConnection = null;
 
 		public function __construct() {
+			
 			$driver = $_ENV['DB_DRIVER'];
 			$hostname = $_ENV['DB_HOST'];
 			$port = $_ENV['DB_PORT'];
