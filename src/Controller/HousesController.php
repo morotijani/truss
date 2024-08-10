@@ -143,6 +143,14 @@
 		private function validateData($params, $id = null) {
 			$response['status_code_header'] = 'HTTP/1.1 422 Unprocessable Entity';
 
+			if (! isset($params['house_name'])) {
+				return $this->unprocessableEntityResponse();
+			}
+
+			if (! isset($params['user_id'])) {
+				return $this->unprocessableEntityResponse();
+			}
+
 			// check if house name already exist
 			if ($id) {
 				$query = "SELECT * FROM houses WHERE house_name = ? AND house_id != ?";
@@ -165,15 +173,6 @@
 					'status' => false,
 					'message' => 'User not found!'
 				]);
-			}
-
-
-			if (! isset($params['user_id'])) {
-				return $this->unprocessableEntityResponse();
-			}
-
-			if (! isset($params['house_name'])) {
-				return $this->unprocessableEntityResponse();
 			}
 
 			return $response;

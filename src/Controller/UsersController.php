@@ -143,12 +143,11 @@
 			if (isset($params['user_email'])) {
 
 				// check if email exist
+				$query = "SELECT * FROM users WHERE user_email = ? LIMIT 1";
+				$query_params = [$params['user_email']];
 				if ($id) {
 					$query = "SELECT * FROM users WHERE user_email = ? AND user_id != ?";
 					$query_params = [$params['user_email'], $id];
-				} else {
-					$query = "SELECT * FROM users WHERE user_email = ? LIMIT 1";
-					$query_params = [$params['user_email']];
 				}
 				$data = run($this->db, $query, $query_params);
 				if (is_array($data)) {
