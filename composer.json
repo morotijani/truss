@@ -6,32 +6,5 @@
     },
     "require": {
         "vlucas/phpdotenv": "^5.6"
-    },
-
-    // "autoload": {
-    //     "psr-4": {
-    //         "HelloWorld\\": "src/HelloWorld/",
-    //         "Test\\": "src/Test"
-    //     }
-    // }
-
-
-
-   //  "autoload": {
-   //      "psr-4": {
-   //          "GrahamCampbell\\ResultType\\": "src/"
-   //      }
-   //  },
-
-   //  "autoload": {
-   //      "psr-4": {
-   //         "PhpOption\\": "src/PhpOption/"
-   //      }
-   // },
-
-   //  "autoload": {
-   //      "psr-4": {
-   //         "Dotenv\\": "src/"
-   //      }
-   //  },
+    }
 }
