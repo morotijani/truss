@@ -12,7 +12,7 @@
 			if (!preg_match("/^Bearer\s+(.*)$/", $_SERVER["HTTP_AUTHORIZATION"], $matches)) {
 				http_response_code(400);
 				echo json_encode([
-					"status" => "false",
+					"status" => false,
 					"message" => "Incomplete authorization header!"
 				]);
 				return false;
@@ -23,7 +23,7 @@
 			} catch (InvalidSignatureException) {
 				http_response_code(401);
 				echo json_encode([
-					"status" => "false",
+					"status" => false,
 					"message" => "Invalid signature!"
 				]);
 				return false;
