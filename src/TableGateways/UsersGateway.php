@@ -141,7 +141,8 @@
 			$values = rtrim($values, ',');
 
 			try {
-				$data = run($this->db, "INSERT INTO users ($array_key) VALUES ($values)", $array_values);
+				$sql = "INSERT INTO `users` ($array_key) VALUES ($values)";
+				$data = run($this->db, $sql, $array_values);
 				return $data;
 			} catch (\PDOException $e) {
 				exit($get->getMessage());

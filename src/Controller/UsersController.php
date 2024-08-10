@@ -86,7 +86,7 @@
 			if (!$validationBody) {
 				return $validation;
 			}
-			
+
 			$this->userGateway->insert($params);
 			
 			$response['status_code_header'] = 'HTTP/1.1 201 Created';

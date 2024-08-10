@@ -9,7 +9,9 @@
 	use Src\TableGateways\ApiUserGateway;
     use Src\TableGateways\RefreshTokenGateway;
 
- 	
+	$requestMethod = $_SERVER["REQUEST_METHOD"];
+	$controller = new DataController($dbConnection, $requestMethod);
+
  	if (isset($_GET['url'])) {
 		header("Access-Control-Allow-Origin: *");
 		header("Content-type: application/json; charset=UTF-8");
@@ -30,9 +32,6 @@
 		// Automatically delete expired tokens
 		$delete_expired = new RefreshTokenGateway($dbConnection, '');
 	    $delete_expired->deleteExpired();
-
-		$requestMethod = $_SERVER["REQUEST_METHOD"];
-		$controller = new DataController($dbConnection, $requestMethod);
 	 	
 	 	$controller->result;
  	}
