@@ -127,7 +127,7 @@
 		public function insert(Array $params) {
 
 			$hid = array('house_id' => guidv4());
-			$createdAt = array('createdAt' => date("Y-m-d H:i:s A"));
+			$createdAt = array('createdAt' => date("Y-m-d H:i:s"));
 			$params = array_merge($params, $hid, $createdAt);
 
 			$array_keys = array_keys($params);
@@ -142,10 +142,11 @@
 			$values = rtrim($values, ',');
 
 			try {
-				$data = run($this->db, "INSERT INTO houses ($array_key) VALUES ($values)", $array_values);
+				$sql = "INSERT INTO houses ($array_key) VALUES ($values)";
+				$data = run($this->db, $sql, $array_values);
 				return $data;
 			} catch (\PDOException $e) {
-				exit($get->getMessage());
+				exit($e->getMessage());
 			}
 		}
 

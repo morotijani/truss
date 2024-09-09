@@ -145,7 +145,7 @@
 				$data = run($this->db, $sql, $array_values);
 				return $data;
 			} catch (\PDOException $e) {
-				exit($get->getMessage());
+				exit($e->getMessage());
 			}
 		}
 

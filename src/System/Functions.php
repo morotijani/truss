@@ -13,7 +13,6 @@
 		$statement = $conn->prepare($query);
 		if ($statement) {
 			$check = $statement->execute($var);
-
 			if ($check) {
 				$response = $check;
 				$data = $statement->fetchAll(PDO::FETCH_OBJ); // fetch objects
@@ -468,7 +467,7 @@
 	    }
 	}
 
-	function yearDropdown($startYear, $endYear, $id="year", $class) {           
+	function yearDropdown($startYear, $endYear, $class) {           
 	    //echo each year as an option     
 	    for ($i = $startYear; $i <= $endYear; $i++) { 
 	    	echo "<option value=" . $i . ">" . $i . "</option>n";     
